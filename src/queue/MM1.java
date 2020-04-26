@@ -47,7 +47,7 @@ public class MM1 extends QueuingModels {
 
     public void CalculatePercentK() {
         this.CalculateUtilizationFactor();
-        float percentK =Math.pow(super.getUtilizationFactor(), (super.getK()+1));
+        float percentK = (float) Math.pow(super.getUtilizationFactor(), (super.getK()+1));
         super.setPercentK(percentK);
     }
 
