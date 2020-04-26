@@ -28,7 +28,7 @@ public class MD1 extends QueuingModels {
     public void CalculateWq() {
         float wq =  super.getArrivalsMean()/((2*getUnitsMean())*(getUnitsMean()-getArrivalsMean()));
         super.setWq(wq);
-}
+    }
 
 
 }
