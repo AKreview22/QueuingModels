@@ -5,6 +5,7 @@ public class MD1 extends QueuingModels {
 
     public void CalculateL() {
         this.CalculateLq();
+        this.CalculateUtilizationFactor();
         float l = super.getLq()+super.getUtilizationFactor() ;
         super.setL(l) ;
 
@@ -20,7 +21,7 @@ public class MD1 extends QueuingModels {
 
     public void CalculateLq() {
         this.CalculateWq();
-        float lq = super.getWq()*super.getArrivalsMean();
+        float lq = super.getWq()*(super.getArrivalsMean());
         super.setLq(lq);
     }
 
@@ -30,5 +31,9 @@ public class MD1 extends QueuingModels {
         super.setWq(wq);
     }
 
+    public void CalculateUtilizationFactor() {
+        float utilizationFactor=super.getArrivalsMean()/super.getUnitsMean();
+        super.setUtilizationFactor(utilizationFactor);
+    }
 
 }

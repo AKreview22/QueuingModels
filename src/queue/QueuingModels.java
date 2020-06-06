@@ -1,20 +1,21 @@
 package queue;
 
 public class QueuingModels {
-    private float ArrivalsMean ; // lambda
-    private float UnitsMean ; //meu
-    private float L ;
-    private float W ;
-    private float Lq ;
-    private float Wq ;
-    private float utilizationFactor ;
-    private float percentIdle ;
-    private float percentK ;
-    private int k ;
+    private float ArrivalsMean; // lambda
+    private float UnitsMean; // meu
+    private float L;
+    private float W;
+    private int M;
+    private float Po;
+    private float Lq;
+    private float Wq;
+    private float utilizationFactor;
+    private float percentIdle;
+    private float percentK;
+    private int k;
+    private float P;
 
-
-    //Setters And Getters
-
+    // Setters And Getters
 
     public float getArrivalsMean() {
         return ArrivalsMean;
@@ -46,6 +47,21 @@ public class QueuingModels {
 
     public void setW(float w) {
         W = w;
+    }
+    public int getM() {
+        return M;
+    }
+
+    public void setM(int m) {
+        M = m;
+    }
+
+    public float getPo() {
+        return Po;
+    }
+
+    public void setPo(float po) {
+        Po = po;
     }
 
     public float getLq() {
@@ -95,5 +111,14 @@ public class QueuingModels {
     public void setK(int k) {
         this.k = k;
     }
-}
 
+    public void setP(float p) {
+        this.P=p;
+    }
+
+    public float getP() {
+        return P;
+    }
+
+
+}
