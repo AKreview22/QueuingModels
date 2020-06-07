@@ -197,7 +197,7 @@ public class gui extends JFrame{
         CalculatePercentKMM1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
-                if("Lambda".equals(lambda.getText())||"meu".equals(meu.getText())||"M".equals(m.getText())){
+                if("Lambda".equals(lambda.getText())||"meu".equals(meu.getText())||"K".equals(k.getText())){
                     JOptionPane.showMessageDialog(null, "Enter all required fields", "ALERT", JOptionPane.WARNING_MESSAGE);
                 }
                 else{
